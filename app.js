@@ -1,9 +1,12 @@
-let titulo = document.querySelector("h1");
-titulo.innerHTML = "decifre o numero"; //titulo do jogo
+function exibirTextoNaTela(tag, texto) {
+    let campo = document.querySelector(tag);
+    campo.innerHTML = texto;
+}
 
-let paragrafro = document.querySelector("p") //descrição do jogo
-paragrafro.innerHTML = "Escolha um número entre 1 a 10"; 
+exibirTextoNaTela("h1", "Decifre o número");
+exibirTextoNaTela("p", "Escolha um número entre 1 a 10");
+
 
 function verificarChute() {
-    console.log("botão foi clicado")
+    console.log("botão foi clicado!");
 }
