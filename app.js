@@ -12,7 +12,14 @@ function verificarChute() {
     let chute = document.querySelector("input").value;
 
     if (chute == numeroSecreto) {
-        exibirTextoNaTela("Parabéns, você acertou!!");
+        exibirTextoNaTela("h1", "Parabéns, você acertou!!");
+        exibirTextoNaTela("p", "Você descobriu o número secreto");
+    } else {
+        if (chute > numeroSecreto) {
+            exibirTextoNaTela("p", "O número secreto é menor");
+        } else {
+            exibirTextoNaTela("p", "O número secreto é maior");
+        }
     }
 }
 
